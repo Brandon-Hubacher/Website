@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "Leky";
+  src: url("./fonts/Leky.otf") format("opentype");
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  user-select: none;
+
+  font-family: "Playfair Display", serif;
+  font-weight: lighter;
+}
+
+body {
+  background: grey;
+  overflow-x: hidden;
+}

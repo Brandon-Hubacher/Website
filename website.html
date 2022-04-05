@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Amiri&family=Bitter:wght@100&family=Bodoni+Moda&family=Cinzel&family=Lato:wght@100&family=Libre+Baskerville&family=Lora&family=Luxurious+Roman&family=Merriweather:wght@300&family=Playfair+Display&family=Poppins:wght@100&family=Quattrocento&family=Source+Serif+Pro:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="website2.css" />
+    <title>Brandon Hubacher</title>
+  </head>
+  <body>
+    <section class="home">
+      <svg
+        class="c-dashed-line"
+        width="800"
+        height="600"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <defs>
+          <path
+            id="c-dashed-line"
+            fill-opacity="1"
+            d="M 100 100 Q 250 500 700 400 A 50 50 0 1 0 650 250 A 50 50 0 1 0 700 400 Q 800 400 750 500 "
+          />
+        </defs>
+        <!-- A solid green line that we'll animate -->
+        <use class="c-dashed-line__path" xlink:href="#c-dashed-line" />
+        <!-- A dashed white line that sits on top of the solid green line -->
+        <use class="c-dashed-line__dash" xlink:href="#c-dashed-line" />
+      </svg>
+      <div class="name">
+        <span>B</span>
+        <span>R</span>
+        <span>A</span>
+        <span>N</span>
+        <span>D</span>
+        <span>O</span>
+        <span>N</span>
+      </div>
+      <h1 class="welcome">
+        Welcome to my portfol
+        <span class="littleL"
+          >l <div class="dot"></div></div><span id="dotHidden" class="dotHidden"></span></span
+        ></span>
+        o
+      </h1>
+      <!-- <span class="TEST">HELLO</span> -->
+      <!-- <h1 class="testWel">Welcome to my portfolio</h1> -->
+      <!-- <div></div> -->
+    </section>
+
+    <section class="not-home">
+      <nav class="nav">
+        <ul class="nav-links">
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="#contacts">Contact Me</a>
+          </li>
+        </ul>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
+      <div class="image">
+        <img src="./img/bookImage.jpg" alt="picture of person" />
+      </div>
+      <div class="paragraph">
+        <h1>Brandon Hubacher</h1>
+        <h3>UT Austin Class of 2022</h3>
+        <h3>Major: Biochemistry</h3>
+        <h3>Certificates: Computer Science, Pre-Health</h3>
+        <br />
+        <p>I'm a Biochemistry major with a passion for Computer Science.</p>
+        <p>
+          Over the past two and a half years, I have pushed myself to as much as
+          I can about software engineering. From databases such as PostgreSQL,
+          MySQL, MongoDB, and Neo4j, languages such as Java and Python, to the
+          front-end topics of HTML, CSS, and JavaScript.
+
+          I am currently a Senior at The University of Texas at Austin studying Biochemistry and Computer Science.
+        </p>
+      </div>
+      <br /><br /><br />
+
+      <div class="projects">
+        <h1>Projects</h1>
+        <div class="project1">
+          <a href="chessProject.html"><img src="/img/chess-cropped.jpg" alt="Cool chess picture"></a>
+          <p class="hoverText">CHESS</p>
+        </div>
+        <br />
+        <div class="project2">
+          <a href="sortingProject.html"><img src="/img/bars.jpg" alt="Image of bars"></a>
+          <p class="hoverText">SORTING</p>
+        </div>
+        <br />
+        <div class="project3">
+          <a href="groupMeProject.html"><img src="/img/bot.jpg" alt="Image of bot"></a>
+          <p class="hoverText">GROUPME BUTLER</p>
+        </div>
+      </div>
+
+      <h1 class="contacth1">Contact Me</h1>
+      <br />
+      <div class="formContainer">
+        <form class="form" action="">
+          <input type="text" id="name" placeholder="Name" /><br />
+          <input type="email" id="email" placeholder="Email" /><br />
+          <textarea
+            name="message"
+            id="message"
+            placeholder="Enter message"
+            cols="30"
+            rows="10"
+          ></textarea
+          ><br />
+          <input type="submit" class="submit" />
+        </form>
+      </div>
+      <div class="media">
+        <a href="http://www.linkedin.com/in/brandonhubacher/" target="_blank">
+          <img id="linkedin" src="./img/linkedin.png" alt="LinkedIn Profile" />
+        </a>
+        <a href="http://github.com/Brandon-Hubacher" target="_blank">
+          <img id="github" src="./img/github.png" alt="Github Profile" />
+        </a>
+      </div>
+      <p id="copyright">
+        BRANDON HUBACHER <span id="copyDate"> &copy; 2022</span>
+      </p>
+    </section>
+    <script src="navBar.js"></script>
+    <script src="physics.js"></script>
+  </body>
+</html>
